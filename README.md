@@ -6,7 +6,7 @@ Como executar o projeto:
 
 2- No terminal execute o comando "npm install";
 
-3- No terminal execute o comando "node src/server.js";
+3- No terminal execute o comando "npm run dev";
 
 4- No navegador entre em seu localhost: http://127.0.0.1:5500/ 
 
