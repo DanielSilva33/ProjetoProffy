@@ -1,26 +1,4 @@
-:root {
-    --color-background: #f0f0f7;
-    --color-primary-lighter: #9871f5;
-    --color-primary-light: #916bea;
-    --color-primary: #8257e5;
-    --color-primary-dark: #774dd6;
-    --color-primary-darker: #6842c2;
-    --color-secondary: #04d361;
-    --color-secondary-dark: #04bf58;
-    --color-title-in-primary: #ffffff;
-    --color-text-in-primary: #d4c2ff;
-    --color-text-title: #32264d;
-    --color-text-complement: #9c98a6;
-    --color-text-base: #6a6180;
-    --color-line-in-white: #e6e6f0;
-    --color-input-background: #f8f8fc;
-    --color-button-text: #ffffff;
-    --color-box-base: #ffffff;
-    --color-box-footer: #fafafc;
-    --color-small-info: #c1bccc;
-}
-
-#study-page #container {
+#page-study #container {
     width: 100vw;
     height: 100vh;
 }
@@ -30,9 +8,8 @@
 }
 
 #search-teachers label {
-    color: var(--color-text-in-primary);
+    color: var(--color-title-in-primary);
 }
-
 #search-teachers .select-block {
     margin-bottom: 1.4rem;
 }
@@ -43,14 +20,13 @@
     background: var(--color-secondary);
     color: var(--color-button-text);
     border: 0;
-    border-radius: 0.8rem;
+    border-radius: .8rem;
     cursor: pointer;
     font: 700 1.6rem Archivo;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
-    transition: background 0.35s;
+    transition: background .2s;
     margin-top: 3.2rem;
 }
 
@@ -58,7 +34,7 @@
     background-color: var(--color-secondary-dark);
 }
 
-#study-page main {
+#page-study main {
     margin: 3.2rem auto;
     width: 90%;
 }
@@ -66,7 +42,7 @@
 .teacher-item {
     background-color: var(--color-box-base);
     border: 1px solid var(--color-line-in-white);
-    border-radius: 0.8rem;
+    border-radius: .8rem;
     margin-top: 2.4rem;
 }
 
@@ -80,7 +56,10 @@
     width: 8rem;
     height: 8rem;
     border-radius: 50%;
-    margin-right: 2.4rem;
+}
+
+.teacher-item header div {
+    margin-left: 2.4rem;
 }
 
 .teacher-item header div strong {
@@ -92,7 +71,7 @@
 .teacher-item header div span {
     font-size: 1.6rem;
     display: block;
-    margin-top: 0.4rem;
+    margin-top: .4rem;
 }
 
 .teacher-item > p {
@@ -124,12 +103,13 @@
     display: block;
 }
 
-.teacher-item footer button {
+.teacher-item footer .button {
     width: 20rem;
     height: 5.6rem;
     background: var(--color-secondary);
     color: var(--color-button-text);
-    border-radius: 0.8rem;
+    border: 0;
+    border-radius: .8rem;
     cursor: pointer;
     font: 700 1.4rem Archivo;
 
@@ -139,18 +119,16 @@
 
     text-decoration: none;
 
-    transition: background 0.35s;
+    transition: background .2s;
     margin-left: 1.6rem;
-    border: 0;
-    outline: none;
 }
 
-.teacher-item footer button:hover {
+.teacher-item footer .button:hover {
     background: var(--color-secondary-dark);
 }
 
 @media (min-width: 700px) {
-    #study-page #container {
+    #page-study #container {
         max-width: 100vw;
     }
 
@@ -158,7 +136,7 @@
         height: 340px;
     }
 
-    .page-header .top-bar {
+    .page-header .top-bar-container {
         max-width: 1100px;
     }
 
@@ -191,7 +169,7 @@
         bottom: -28px;
     }
 
-    #study-page main {
+    #page-study main {
         padding: 32px 0;
         max-width: 740px;
         margin: 0 auto;
@@ -214,6 +192,7 @@
         width: 245px;
         font-size: 16px;
         justify-content: center;
+        
     }
 
     .teacher-item footer button img {
